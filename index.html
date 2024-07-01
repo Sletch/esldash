@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne Sletcher's English Teaching Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #388E3C;
+            --background-color: #121212;
+            --surface-color: #1E1E1E;
+            --text-color: #E0E0E0;
+            --text-color-secondary: #9E9E9E;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: var(--surface-color);
+            color: var(--primary-color);
+            text-align: center;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        .tab {
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--surface-color);
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+            flex-grow: 1;
+            color: var(--text-color);
+        }
+        .tab button:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        .tab button.active {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+        }
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            background-color: var(--surface-color);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            margin-top: 20px;
+        }
+        .pricing-option {
+            border: 1px solid var(--text-color-secondary);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .pricing-option:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transform: translateY(-5px);
+        }
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+        }
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--text-color-secondary);
+            border-radius: 5px;
+            background-color: var(--surface-color);
+            color: var(--text-color);
+        }
+        .contact-form button {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: var(--secondary-color);
+        }
+        .carousel {
+            margin-bottom: 30px;
+        }
+        .carousel img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wayne Sletcher's English Teaching Services</h1>
+    </header>
+    
+    <div class="container">
+        <div class="carousel">
+            <div><img src="public/class.jpg" alt="Heros 1"></div>
+            <div><img src="public/legends.jpg" alt="Class 2"></div>
+            <div><img src="public/Wayne Sletcher.jpg" alt="Wayne Sletcher 3"></div>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'About')" id="defaultOpen">About</button>
+            <button class="tablinks" onclick="openTab(event, 'Methods')">Methods</button>
+            <button class="tablinks" onclick="openTab(event, 'Services')">Services</button>
+            <button class="tablinks" onclick="openTab(event, 'Pricing')">Pricing</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h2>About Wayne Sletcher</h2>
+            <p>Hello! I'm Wayne Sletcher, a dedicated and passionate English teacher with 12 years of experience. I specialize in personalized instruction, interactive learning, and cultural understanding.</p>
+            <p>My goal is to help you achieve fluency and confidence in English, whether you're a beginner or looking to refine your skills. With a track record of success and a commitment to tailored learning experiences, I'm here to guide you on your English language journey.</p>
+        </div>
+
+        <div id="Methods" class="tabcontent">
+            <h2>Teaching Methods</h2>
+            <h3>Sentence Construction</h3>
+            <ul>
+                <li><strong>S.V:</strong> Subject + Verb (foundation of a sentence)</li>
+                <li><strong>S.V.A:</strong> Matching Subject and Verb (agree in number and tense)</li>
+                <li><strong>Obj(n.d)+ P:</strong> Object + Preposition (complete the action with context)</li>
+                <li><strong>*/Adj/Adv*:</strong> Adjectives and Adverbs (enrich detail and description)</li>
+                <li><strong>C1, conj. C2:</strong> Linking Clauses (build complexity and flow)</li>
+            </ul>
+            <h3>Paragraph Framework</h3>
+            <p><strong>4-Step Method:</strong></p>
+            <ol>
+                <li>Read Text: Consume English text to understand the content.</li>
+                <li>Identify Main Ideas: Use the 5 W's (Who, What, Where, When, Why) and 1 H (How).</li>
+                <li>Create: Write a 4-sentence summary based on the text.</li>
+                <li>Seek Feedback: Share your summary for improvement.</li>
+            </ol>
+        </div>
+
+        <div id="Services" class="tabcontent">
+            <h2>Rapid Fluency Program</h2>
+            <ul>
+                <li>6 weeks to 3 months for intermediate to advanced learners</li>
+                <li>6 months for beginners</li>
+                <li>Customized lessons tailored to your goals</li>
+                <li>Regular homework assignments</li>
+                <li>Progress reports and records</li>
+                <li>Flexible scheduling</li>
+            </ul>
+            <p>My Rapid Fluency Program is designed to accelerate your English learning through intensive, personalized instruction. Whether you're aiming for business English proficiency or casual conversation skills, this program adapts to your needs and learning pace.</p>
+        </div>
+
+        <div id="Pricing" class="tabcontent">
+            <h2>Pricing Options</h2>
+            <div class="pricing-option">
+                <h3>Basic Support</h3>
+                <p><strong>$100 for 5 lessons</strong> (1 week of support)</p>
+                <p>Ideal for those who want a taste of the program and limited guidance.</p>
+                <ul>
+                    <li>5 one-hour lessons</li>
+                    <li>Basic progress tracking</li>
+                    <li>Email support</li>
+                </ul>
+            </div>
+            <div class="pricing-option">
+                <h3>Premium Support</h3>
+                <p><strong>$250 for 15 lessons</strong> (3 weeks of support)</p>
+                <p>Perfect for those who want regular feedback and guidance to accelerate their progress.</p>
+                <ul>
+                    <li>15 one-hour lessons</li>
+                    <li>Detailed progress reports</li>
+                    <li>Email and chat support</li>
+                    <li>Customized study materials</li>
+                </ul>
+            </div>
+            <div class="pricing-option">
+                <h3>Elite Support</h3>
+                <p><strong>$400 for 30 lessons</strong> (6 weeks of support)</p>
+                <p>Best for those who want extensive support, regular progress tracking, and personalized feedback.</p>
+                <ul>
+                    <li>30 one-hour lessons</li>
+                    <li>Comprehensive progress analysis</li>
+                    <li>24/7 email and chat support</li>
+                    <li>Customized study plan and materials</li>
+                    <li>Weekly one-on-one progress review</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h2>Contact Me</h2>
+            <p>Interested in starting your English learning journey? Have questions about my services? Feel free to reach out!</p>
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message! I'll get back to you soon.");
+            this.reset();
+        });
+
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
+</body>
+</html>
